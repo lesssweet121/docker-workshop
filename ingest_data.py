@@ -3,6 +3,16 @@
 
 # In[56]:
 
+pg_user = 'root'
+pg_pass = 'root'
+pg_host = 'localhost'
+pg_port = 5432
+pg_db = 'ny_taxi'
+
+
+year = 2021
+month = 1
+
 
 engine = create_engine(
     "postgresql+psycopg://root:root@ny_taxi_pg:5432/ny_taxi"
@@ -20,31 +30,13 @@ import pandas as pd
 
 # Read a sample of the data
 prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/'
-df = pd.read_csv(prefix + 'yellow_tripdata_2021-01.csv.gz', nrows=100)
-
-
-# In[59]:
-
-
-df.head()
+url = f'{prefix}/yellow_tripdata_{year}-{month:02d}.csv.gz'
 
 
 # In[60]:
 
 
-len(df)
 
-
-# In[61]:
-
-
-df
-
-
-# In[62]:
-
-
-df['tpep_pickup_datetime']
 
 
 # In[63]:
