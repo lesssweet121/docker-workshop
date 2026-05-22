@@ -209,3 +209,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data directory
+data/
+data-engineering-zoomcamp/
+data-engineering-zoomcamp/
+*.duckdb
+logs/
+*.save
