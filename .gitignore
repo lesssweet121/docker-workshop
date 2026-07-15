@@ -217,3 +217,9 @@ data-engineering-zoomcamp/
 *.duckdb
 logs/
 *.save
+
+.bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
+logs/queries
