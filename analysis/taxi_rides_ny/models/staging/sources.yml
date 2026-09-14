@@ -1,7 +1,7 @@
 sources:
   - name: raw
     description: Raw taxi trip data from NYC TLC
-    schema: prod
+    schema: trips_data_all
         
 
     tables:

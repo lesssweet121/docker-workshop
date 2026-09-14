@@ -55,8 +55,7 @@ cleaned_and_enriched as (
 
 select * from cleaned_and_enriched
 
--- Deduplicate: if multiple trips match (same vendor, second, location, service), keep first
---qualify row_number() over(
---    partition by vendor_id, pickup_datetime, pickup_location_id, service_type
---    order by dropoff_datetime
---) = 1
+qualify row_number() over (
+  partition by vendor_id, pickup_datetime, pickup_location_id, service_type
+  order by dropoff_datetime
+) = 1

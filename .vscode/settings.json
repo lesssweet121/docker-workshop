@@ -1,4 +1,14 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system",
-    "python-envs.pythonProjects": []
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "python-envs.pythonProjects": [],
+  "files.exclude": {
+    "data": true,
+    "logs": true,
+    "Temp": true,
+    "test": true,
+    "taxi_rides_ny.duckdb": true,
+    "terraform.tfstate": true,
+    "terraform.tfstate.backup": true,
+    "**/.ipynb_checkpoints": true
+  }
 }
